@@ -1,0 +1,14 @@
+{
+	"name": "sveltekit-extension-template",
+	"description": "Example Chrome extension built with Sveltekit and Skeleton",
+	"version": "0.0.1",
+	"manifest_version": 3,
+	"icons": {
+		"32": "favicon.png"
+	},
+	"action": {
+		"default_popup": "index.html",
+		"default_icon": "favicon.png",
+		"default_title": "sveltekit-extension-template"
+	}
+}
