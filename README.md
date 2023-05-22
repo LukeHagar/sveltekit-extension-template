@@ -1,38 +1,61 @@
-# create-svelte
+# SvelteKit Extension Template
+By Luke Hagar
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+Built with [Sveltekit](https://kit.svelte.dev) and [Skeleton](https://www.skeleton.dev)
 
-If you're seeing this, you've probably already done this step. Congrats!
+Out of the box Includes:
+   * [x] Skeleton
+   * [x] Tailwind
+   * [x] ESlint
+   * [x] Prettier
+   * [x] TypeScript
+   * [x] Vite
+   * [x] Vitest
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
 
-## Developing
+
+## Reference Documentation
+
+
+[Extension Development Basics](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/)
+
+
+
+## Developing 
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
+NPM:
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```
+Yarn:
+```bash
+yarn dev
+```
+pnpm:
+```bash
+pnpm dev
 ```
 
 ## Building
 
 To create a production version of your app:
 
+NPM:
 ```bash
 npm run build
 ```
+Yarn:
+```bash
+yarn build
+```
+pnpm:
+```bash
+pnpm build
+```
 
-You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> To deploy your app, you can load it as an unpacked chrome extension, instructions are in [Extension Development Basics](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/)
