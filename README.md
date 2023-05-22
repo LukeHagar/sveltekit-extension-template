@@ -7,6 +7,7 @@ Built with [Sveltekit](https://kit.svelte.dev) and [Skeleton](https://www.skelet
 Out of the box Includes:
    * [x] Skeleton
    * [x] Tailwind
+   * [x] Chrome Types
    * [x] ESlint
    * [x] Prettier
    * [x] TypeScript
