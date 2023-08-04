@@ -3,8 +3,13 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "pnpm build-dev && run-p run:chrome watch",
+		"build-dev": "vite build --mode development && pnpm replace-background-path && pnpm build-content-script",
+		"watch": "watch 'pnpm build-dev' src static",
+		"build": "vite build && pnpm replace-background-path && pnpm build-content-script",
+		"run:chrome": "web-ext run -t chromium -s build",
+		"replace-background-path": "cd build; sed -i \"\" \"s#\\$BACKGROUND_PATH#$(find app -wholename '*/immutable/background.*.js')#g\" manifest.json; cd -",
+		"build-content-script": "esbuild src/content.ts --bundle --minify --outdir=build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -27,6 +32,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.26.0",
 		"highlight.js": "^11.8.0",
+		"npm-run-all": "^4.1.5",
 		"postcss": "^8.4.23",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
@@ -37,7 +43,8 @@
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"vite": "^4.3.0",
-		"vitest": "^0.25.3"
+		"vitest": "^0.25.3",
+		"watch": "^1.0.2"
 	},
 	"type": "module"
 }
