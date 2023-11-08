@@ -10,5 +10,15 @@
 		"default_popup": "index.html",
 		"default_icon": "favicon.png",
 		"default_title": "sveltekit-extension-template"
-	}
+	},
+	"background": {
+    "service_worker": "$BACKGROUND_PATH",
+    "type": "module"
+  },
+	"content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
 }
