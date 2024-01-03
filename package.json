@@ -15,13 +15,14 @@
 	"devDependencies": {
 		"@floating-ui/dom": "^1.5.3",
 		"@skeletonlabs/skeleton": "^2.3.0",
-		"@skeletonlabs/tw-plugin": "^0.2.2",
+		"@skeletonlabs/tw-plugin": "^0.3.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-static": "^3.0.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@tailwindcss/forms": "^0.5.6",
 		"@tailwindcss/typography": "^0.5.10",
-		"@types/chrome": "^0.0.247",
+		"@types/chrome": "^0.0.254",
 		"@typescript-eslint/eslint-plugin": "^6.8.0",
 		"@typescript-eslint/parser": "^6.8.0",
 		"autoprefixer": "^10.4.16",
@@ -38,8 +39,9 @@
 		"tailwindcss": "^3.3.3",
 		"tslib": "^2.6.2",
 		"typescript": "^5.2.2",
-		"vite": "^4.4.11",
-		"vitest": "^0.34.6"
+		"vite": "^5.0.10",
+		"vite-plugin-tailwind-purgecss": "^0.2.0",
+		"vitest": "^1.1.1"
 	},
 	"type": "module"
 }
