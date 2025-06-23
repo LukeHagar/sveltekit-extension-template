@@ -5,7 +5,7 @@
 		<h2 class="h2 font-bold">Welcome to Skeleton.</h2>
 		<!-- Animated Logo -->
 		<figure>
-			<section class="img-bg" />
+			<section class="img-bg"></section>
 			<svg
 				class="fill-token -scale-x-[100%] !h-24 !w-24"
 				xmlns="http://www.w3.org/2000/svg"
