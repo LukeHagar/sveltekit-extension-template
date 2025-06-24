@@ -1,4 +1,4 @@
-# SvelteKit Extension Template
+# SvelteKit Chrome Extension Template
 By Luke Hagar
 
 
