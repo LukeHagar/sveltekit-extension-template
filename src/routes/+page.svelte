@@ -4,10 +4,10 @@
 	<div class="space-y-10 text-center flex flex-col items-center">
 		<h2 class="h2 font-bold">Welcome to Skeleton.</h2>
 		<!-- Animated Logo -->
-		<figure>
-			<section class="img-bg"></section>
+		<figure class="flex relative flex-col">
+			<section class="img-bg w-32 h-32 absolute z-[-1] rounded-full blur-[50px] transition-all"></section>
 			<svg
-				class="fill-token -scale-x-[100%] !h-24 !w-24"
+				class="fill-white -scale-x-100 h-24! w-24!"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 200 200"
 			>
@@ -31,32 +31,24 @@
 	</div>
 </div>
 
-<style lang="postcss">
-	figure {
-		@apply flex relative flex-col;
-	}
-	figure svg,
+<style>
 	.img-bg {
-		@apply w-32 h-32;
-	}
-	.img-bg {
-		@apply absolute z-[-1] rounded-full blur-[50px] transition-all;
 		animation:
 			pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite,
 			glow 5s linear infinite;
 	}
 	@keyframes glow {
 		0% {
-			@apply bg-primary-400/50;
+			background-color: oklch(48.376% 0.28256 265.22 / 0.5);
 		}
 		33% {
-			@apply bg-secondary-400/50;
+			background-color: oklch(49.477% 0.29446 281.787 / 0.5);
 		}
 		66% {
-			@apply bg-tertiary-400/50;
+			background-color: oklch(66.104% 0.18232 256.59 / 0.5);
 		}
 		100% {
-			@apply bg-primary-400/50;
+			background-color: oklch(48.376% 0.28256 265.22 / 0.5);
 		}
 	}
 	@keyframes pulse {
