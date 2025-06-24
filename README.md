@@ -5,8 +5,9 @@ By Luke Hagar
 Built with [Sveltekit](https://kit.svelte.dev) and [Skeleton](https://www.skeleton.dev)
 
 Out of the box Includes:
-   * [x] Skeleton
-   * [x] Tailwind
+   * [x] Svelte 5
+   * [x] Skeleton 3
+   * [x] Tailwind 4
    * [x] Chrome Types
    * [x] ESlint
    * [x] Prettier
